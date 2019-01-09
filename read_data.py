@@ -41,7 +41,7 @@ def create_image_lists(image_dir):
         else:
             for f in file_list:
                 
-                filename = os.path.splitext(f.split("\\")[-1])[0] #for windows
+                filename = os.path.splitext(f.split("\\")[-1])[0] #for Windows: '\\', Linux: '/'
     
                 annotation_file = os.path.join(image_dir, "annotations", directory, filename + '.png')
                 
